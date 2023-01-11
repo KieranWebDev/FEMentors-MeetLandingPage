@@ -1,0 +1,29 @@
+:root {
+  --mainBtn: #4d96a9;
+  --mainBtnHover: #8fe3f9;
+  --secondaryBtn: #855fb1;
+  --secondaryBtnHover: #d9b8ff;
+  --headings: #28283d;
+  --text: #87879d;
+}
+
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+@media (min-width: 768px) {
+  /* .container {
+    width: 720px;
+  } */
+}
+
+@media (min-width: 992px) {
+  /* .container {
+    width: 960px;
+  } */
+}
