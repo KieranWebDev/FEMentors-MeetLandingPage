@@ -29,6 +29,14 @@ body {
   overflow-x: hidden; /* Hide vertical scrollbar */
   position: relative;
 }
+h1,
+h2 {
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: var(--headings);
+  margin-bottom: 1.5rem;
+  line-height: 48px;
+}
 
 /* BUTTONS */
 .buttons-container {
@@ -104,14 +112,6 @@ header img {
   margin-bottom: 4rem;
 }
 
-.hero-info h1 {
-  font-size: 2.5rem;
-  font-weight: 900;
-  color: var(--headings);
-  margin-bottom: 1.5rem;
-  line-height: 48px;
-}
-
 .text {
   font-weight: 500;
   font-size: 16px;
@@ -148,7 +148,7 @@ header img {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   /* grid-template-rows: repeat(2, 1fr); */
-  grid-gap: 1rem;
+  grid-gap: 1.5rem;
   margin-bottom: 2rem;
   padding: 0 1.5rem;
 }
@@ -157,6 +157,32 @@ header img {
   height: 100%;
   object-fit: cover;
   border-radius: 8px;
+}
+
+/* APP INFOR SECTION */
+.app-info-text {
+  margin: 0 auto;
+  text-align: center;
+  padding: 1.5rem;
+  margin-bottom: 4rem;
+}
+.app-info-text h4 {
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 4px;
+  color: var(--mainBtn);
+  margin-bottom: 1.5rem;
+}
+.app-info-text h2 {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+.app-info-text p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+  color: var(--text);
+  margin-bottom: 2rem;
 }
 
 /* HIDE PICS ON MOBILE AND TABLET */
@@ -168,7 +194,7 @@ header img {
 
 @media (min-width: 432px) {
   .hero-info {
-    margin-top: 350px;
+    margin-top: 380px;
   }
 }
 
@@ -199,6 +225,7 @@ header img {
   .pic-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
   }
 }
 
@@ -245,16 +272,22 @@ header img {
     padding: 0;
   }
 
-  .hero-info h1 {
+  h1 {
     font-size: 4rem;
     line-height: 4rem;
   }
   .pic-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    /* grid-template-rows: repeat(2, 1fr); */
-    grid-gap: 30px;
-    margin-bottom: 2rem;
-    padding: 10.3125rem;
+    padding: 0 10.3125rem;
+    justify-content: center;
+    gap: 1.875rem;
+  }
+  .pic-grid img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    /* max-width: 255px;
+    min-width: 200px; */
+    justify-self: center;
   }
 }
