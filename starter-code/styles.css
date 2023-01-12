@@ -149,7 +149,7 @@ header img {
   grid-template-columns: repeat(2, 1fr);
   /* grid-template-rows: repeat(2, 1fr); */
   grid-gap: 1.5rem;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
   padding: 0 1.5rem;
 }
 .pic-grid img {
@@ -163,7 +163,7 @@ header img {
 .app-info-text {
   margin: 0 auto;
   text-align: center;
-  padding: 1.5rem;
+  padding: 0 1.5rem;
   margin-bottom: 4rem;
 }
 .app-info-text h4 {
@@ -182,7 +182,7 @@ header img {
   font-weight: 500;
   line-height: 26px;
   color: var(--text);
-  margin-bottom: 2rem;
+  /* margin-bottom: 2rem; */
 }
 
 /* HIDE PICS ON MOBILE AND TABLET */
@@ -226,6 +226,18 @@ header img {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 1rem;
+    padding: 0 2.5rem;
+    margin-bottom: 2rem;
+  }
+  .app-info-text {
+    width: 75%;
+    padding: 0;
+  }
+  .app-info-text h2 {
+    font-size: 2.5rem;
+    width: 72%;
+    margin: 0 auto;
+    margin-bottom: 2rem;
   }
 }
 
@@ -280,6 +292,7 @@ header img {
     padding: 0 10.3125rem;
     justify-content: center;
     gap: 1.875rem;
+    margin-bottom: 5rem;
   }
   .pic-grid img {
     width: 100%;
@@ -289,5 +302,16 @@ header img {
     /* max-width: 255px;
     min-width: 200px; */
     justify-self: center;
+  }
+  .app-info-text {
+    max-width: 540px;
+  }
+  .app-info-text h2 {
+    font-size: 2.5rem;
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    /* margin: 0 auto;
+    margin-bottom: 2rem; */
   }
 }
