@@ -22,10 +22,12 @@ html {
 }
 
 body {
-  width: 100%;
-
+  /* width: 100%; */
+  max-width: 1600px;
   margin: 0 auto;
   font-family: 'Red Hat Display', sans-serif;
+  overflow-x: hidden; /* Hide vertical scrollbar */
+  position: relative;
 }
 
 /* BUTTONS */
@@ -75,25 +77,31 @@ header img {
 }
 
 .hero {
-  width: 100%;
+  /* width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: center; */
   text-align: center;
   margin-bottom: 4rem;
+  /* position: relative; */
+  overflow: hidden;
 }
 
 .hero-img {
+  position: absolute;
   display: block;
   width: 110%;
-  margin-left: -20px;
+  left: -20px;
   overflow: hidden;
-  margin-bottom: 3rem;
+  /* margin-bottom: 3rem; */
 }
 .hero-info {
+  margin: 0 auto;
   text-align: center;
   padding: 0 1.5rem;
+  margin-top: 220px;
+  margin-bottom: 4rem;
 }
 
 .hero-info h1 {
@@ -135,8 +143,8 @@ header img {
 
 /* PICTURE GRID- */
 .pic-grid {
-  max-width: 1440px;
-  margin: 0 auto;
+  /* max-width: 1440px; */
+  /* margin: 0 auto; */
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   /* grid-template-rows: repeat(2, 1fr); */
@@ -150,8 +158,22 @@ header img {
   object-fit: cover;
   border-radius: 8px;
 }
+
+/* HIDE PICS ON MOBILE AND TABLET */
+.hero-left-desktop,
+.hero-right-desktop {
+  display: none;
+  visibility: hidden;
+}
+
+@media (min-width: 432px) {
+  .hero-info {
+    margin-top: 350px;
+  }
+}
+
 /* TABLET */
-@media (min-width: 768px) {
+@media (min-width: 740px) {
   /* .container {
     width: 720px;
   } */
@@ -160,15 +182,13 @@ header img {
   }
 
   .hero-img {
-    display: block;
-    width: 108%;
-    margin-left: -30px;
-    overflow: hidden;
-    margin-bottom: 4.5rem;
+    width: 110%;
+    left: -30px;
   }
 
   .hero-info {
-    width: 60%;
+    max-width: 460px;
+    margin-top: 450px;
   }
   .buttons-container {
     flex-direction: row;
@@ -187,15 +207,42 @@ header img {
   /* .container {
     width: 960px;
   } */
+  body {
+    max-width: 1600px;
+  }
+
   header {
     margin-top: 80px;
+    margin-bottom: 6.75rem;
   }
-  .hero {
-    margin-bottom: 5rem;
-  }
+
   .hero-img {
     display: none;
     visibility: hidden;
+  }
+
+  .hero-left-desktop,
+  .hero-right-desktop {
+    display: block;
+    visibility: visible;
+    position: absolute;
+    width: 30%;
+    /* max-width: 500px; */
+    z-index: -5;
+  }
+  .hero-right-desktop {
+    right: -35px;
+  }
+  .hero-left-desktop {
+    left: -35px;
+    top: 100px;
+  }
+  .hero-info {
+    margin-top: 0;
+    /* max-width: 540px;
+    min-width: 340px; */
+    width: 40%;
+    padding: 0;
   }
 
   .hero-info h1 {
