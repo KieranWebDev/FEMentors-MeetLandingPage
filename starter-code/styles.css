@@ -194,6 +194,8 @@ header img {
 }
 
 .footer {
+  max-width: 2500px;
+  width: 100%;
   margin-top: -25px;
   z-index: -5;
   border: 1px solid black;
@@ -207,6 +209,7 @@ header img {
     linear-gradient(rgba(77, 150, 169, 0.9), rgba(77, 150, 169, 0.9));
   background-blend-mode: multiply;
   background-size: cover;
+  color: #fff;
 }
 /* .bg-image {
   background-image: url('./assets/desktop/image-footer.jpg'),
@@ -217,14 +220,17 @@ header img {
 .footer h2 {
   /* color: white; */
   font-size: 2rem;
+  color: #fff;
 }
 
 .footer p {
   margin-bottom: 35px;
+  color: #fff;
 }
 .footer span {
   color: #fff;
   font-weight: 400;
+  color: #fff;
 }
 /* HIDE PICS ON MOBILE AND TABLET */
 .hero-left-desktop,
