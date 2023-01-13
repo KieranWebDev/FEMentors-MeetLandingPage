@@ -211,7 +211,7 @@ header img {
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 5.75rem 0;
+  padding: 5.75rem 1rem;
 }
 .footer-flex-container h2 {
   font-size: 2rem;
