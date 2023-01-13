@@ -23,7 +23,7 @@ html {
 
 body {
   /* width: 100%; */
-  max-width: 1600px;
+  /* max-width: 1600px; */
   margin: 0 auto;
   font-family: 'Red Hat Display', sans-serif;
   overflow-x: hidden; /* Hide vertical scrollbar */
@@ -198,10 +198,13 @@ header img {
   background-image: url('./assets/mobile/image-footer.jpg');
   background-size: cover;
   margin-top: -25px;
-  max-width: 2500px;
+}
+.footer-opacity {
+  background-color: rgba(77, 150, 169, 0.9);
+  color: #fff;
 }
 
-.footer-content {
+.footer-flex-container {
   /* opacity: 0.8; */
   display: flex;
   flex-direction: column;
@@ -209,10 +212,8 @@ header img {
   align-items: center;
   text-align: center;
   padding: 5.75rem 0;
-  background-color: rgba(77, 150, 169, 0.8);
-  color: #fff;
 }
-.footer-content h2 {
+.footer-flex-container h2 {
   font-size: 2rem;
   color: white;
   opacity: 1;
@@ -224,12 +225,12 @@ header img {
   background-blend-mode: multiply;
 } */
 
-.footer-content p {
+.footer-flex-container p {
   margin-bottom: 35px;
   color: #fff;
   opacity: 1;
 }
-.footer-content span {
+.footer-flex-container span {
   color: #fff;
   font-weight: 400;
 }
@@ -293,6 +294,12 @@ header img {
   .footer p {
     width: 65%;
   }
+  .footer-pic-container {
+    background-image: url('./assets/tablet/image-footer.jpg');
+  }
+  .footer-flex-container {
+    padding-bottom: 4.125rem;
+  }
 }
 
 /* DESKTOP */
@@ -302,6 +309,7 @@ header img {
   } */
   .container {
     max-width: 1600px;
+    margin: 0 auto;
   }
 
   header {
@@ -368,18 +376,32 @@ header img {
     /* margin: 0 auto;
     margin-bottom: 2rem; */
   }
-
-  .footer-content {
-    margin: 0 auto;
+  .footer-pic-container {
+    width: 100%;
+    background-image: url('./assets/desktop/image-footer.jpg');
+  }
+  .footer-flex-container {
+    /* margin: 0 auto;
     flex-direction: row;
     justify-content: center;
     gap: 10%;
+    padding: 116px 165px 104px 165px; */
+    width: 70%;
+    margin: 0 auto;
+    flex-direction: row;
+    justify-content: space-between;
   }
 
-  .footer-content h2,
-  .footer-content p {
+  .footer-flex-container h2,
+  .footer-flex-container p {
     width: auto;
-    flex-basis: 22%;
+    flex-basis: 30%;
     text-align: start;
+    margin: 0;
+  }
+  .footer-flex-container .btn-secondary {
+    margin-bottom: 0;
+    width: 190px;
+    height: 60px;
   }
 }
