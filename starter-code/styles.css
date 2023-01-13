@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;600;800;900&display=swap');
 
 :root {
-  --mainBtn: #4d96a9;
+  --mainBtn: rgb(77, 150, 169);
   --mainBtnHover: #8fe3f9;
   --secondaryBtn: #855fb1;
   --secondaryBtnHover: #d9b8ff;
@@ -159,7 +159,7 @@ header img {
   border-radius: 8px;
 }
 
-/* APP INFOR SECTION */
+/* APP INFO SECTION */
 .app-info-text {
   margin: 0 auto;
   text-align: center;
@@ -185,6 +185,47 @@ header img {
   /* margin-bottom: 2rem; */
 }
 
+/* FOOTER */
+.two {
+  margin-bottom: 0;
+}
+.two span {
+  background-color: #fff;
+}
+
+.footer {
+  margin-top: -25px;
+  z-index: -5;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 5.75rem 0;
+  background-image: url('./assets/mobile/image-footer.jpg'),
+    linear-gradient(rgba(77, 150, 169, 0.9), rgba(77, 150, 169, 0.9));
+  background-blend-mode: multiply;
+  background-size: cover;
+}
+/* .bg-image {
+  background-image: url('./assets/desktop/image-footer.jpg'),
+    linear-gradient(rgba(77, 150, 169, 0.9), rgba(77, 150, 169, 0.9));
+  background-blend-mode: multiply;
+} */
+
+.footer h2 {
+  /* color: white; */
+  font-size: 2rem;
+}
+
+.footer p {
+  margin-bottom: 35px;
+}
+.footer span {
+  color: #fff;
+  font-weight: 400;
+}
 /* HIDE PICS ON MOBILE AND TABLET */
 .hero-left-desktop,
 .hero-right-desktop {
@@ -238,6 +279,12 @@ header img {
     width: 72%;
     margin: 0 auto;
     margin-bottom: 2rem;
+  }
+  .footer h2 {
+    width: 50%;
+  }
+  .footer p {
+    width: 65%;
   }
 }
 
@@ -313,5 +360,19 @@ header img {
     margin: 0 auto;
     /* margin: 0 auto;
     margin-bottom: 2rem; */
+  }
+
+  .footer {
+    margin: 0 auto;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10%;
+  }
+
+  .footer h2,
+  .footer p {
+    width: auto;
+    flex-basis: 22%;
+    text-align: start;
   }
 }
