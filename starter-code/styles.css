@@ -3,7 +3,7 @@
 
 :root {
   --mainBtn: rgb(77, 150, 169);
-  --mainBtnHover: #8fe3f9;
+  --mainBtnHover: #71c0d4;
   --secondaryBtn: #855fb1;
   --secondaryBtnHover: #d9b8ff;
   --headings: #28283d;
@@ -84,14 +84,14 @@ header img {
   margin: 0 auto;
 }
 
-.hero {
+.hero-img-container {
   /* width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center; */
   text-align: center;
-  margin-bottom: 4rem;
+  /* margin-bottom: 3rem; */
   /* position: relative; */
   overflow: hidden;
 }
@@ -105,10 +105,11 @@ header img {
   /* margin-bottom: 3rem; */
 }
 .hero-info {
+  width: 85%;
   margin: 0 auto;
   text-align: center;
   padding: 0 1.5rem;
-  margin-top: 220px;
+  margin-top: 200px;
   margin-bottom: 4rem;
 }
 
@@ -205,6 +206,7 @@ header img {
 }
 
 .footer-flex-container {
+  margin: 0 auto;
   /* opacity: 0.8; */
   display: flex;
   flex-direction: column;
@@ -212,6 +214,7 @@ header img {
   align-items: center;
   text-align: center;
   padding: 5.75rem 1rem;
+  max-width: 80%;
 }
 .footer-flex-container h2 {
   font-size: 2rem;
@@ -243,12 +246,12 @@ header img {
 
 @media (min-width: 432px) {
   .hero-info {
-    margin-top: 380px;
+    margin-top: 300px;
   }
 }
 
 /* TABLET */
-@media (min-width: 740px) {
+@media (min-width: 640px) {
   /* .container {
     width: 720px;
   } */
@@ -263,20 +266,23 @@ header img {
 
   .hero-info {
     max-width: 460px;
-    margin-top: 450px;
+    margin-top: 380px;
   }
   .buttons-container {
     flex-direction: row;
   }
   .hero-info h1 {
+    margin: 0 auto;
     font-size: 48px;
+    width: 80%;
+    margin-bottom: 1.5rem;
   }
   .pic-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 1rem;
     padding: 0 2.5rem;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
   }
   .app-info-text {
     width: 75%;
@@ -284,7 +290,7 @@ header img {
   }
   .app-info-text h2 {
     font-size: 2.5rem;
-    width: 72%;
+    width: 75%;
     margin: 0 auto;
     margin-bottom: 2rem;
   }
@@ -303,7 +309,7 @@ header img {
 }
 
 /* DESKTOP */
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 920px) {
   /* .container {
     width: 960px;
   } */
@@ -328,8 +334,13 @@ header img {
     visibility: visible;
     position: absolute;
     width: 30%;
+    min-width: 20%;
+    max-width: 600px;
     /* max-width: 500px; */
     z-index: -5;
+  }
+  .hero-img-container {
+    max-width: 1600px;
   }
   .hero-right-desktop {
     right: -35px;
@@ -344,9 +355,10 @@ header img {
     min-width: 340px; */
     width: 40%;
     padding: 0;
+    margin-bottom: 6.875rem;
   }
 
-  h1 {
+  .hero-info h1 {
     font-size: 4rem;
     line-height: 4rem;
   }
@@ -373,6 +385,7 @@ header img {
     width: 80%;
     text-align: center;
     margin: 0 auto;
+    margin-bottom: 2rem;
     /* margin: 0 auto;
     margin-bottom: 2rem; */
   }
