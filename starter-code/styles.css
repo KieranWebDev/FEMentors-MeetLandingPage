@@ -307,8 +307,8 @@ header img {
     visibility: visible;
     position: absolute;
     width: 30%;
-    min-width: 20%;
-    max-width: 600px;
+    min-width: 200px;
+    max-width: 450px;
     z-index: -5;
   }
   .hero-img-container {
