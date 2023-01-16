@@ -330,6 +330,7 @@ header img {
   .hero-info h1 {
     font-size: 4rem;
     line-height: 4rem;
+    width: 100%;
   }
   /* PIC GRID */
   .pic-grid {
