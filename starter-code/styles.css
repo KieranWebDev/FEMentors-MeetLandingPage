@@ -26,6 +26,7 @@ body {
   font-family: 'Red Hat Display', sans-serif;
   overflow-x: hidden;
   position: relative;
+  background-color: #fafafa;
 }
 h1,
 h2 {
@@ -325,6 +326,10 @@ header img {
     width: 40%;
     padding: 0;
     margin-bottom: 6.875rem;
+    font-size: 18px;
+  }
+  .hero-info p {
+    font-size: 18px;
   }
 
   .hero-info h1 {
