@@ -22,11 +22,9 @@ html {
 }
 
 body {
-  /* width: 100%; */
-  /* max-width: 1600px; */
   margin: 0 auto;
   font-family: 'Red Hat Display', sans-serif;
-  overflow-x: hidden; /* Hide vertical scrollbar */
+  overflow-x: hidden;
   position: relative;
 }
 h1,
@@ -84,25 +82,12 @@ header img {
   margin: 0 auto;
 }
 
-.hero-img-container {
-  /* width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center; */
-  text-align: center;
-  /* margin-bottom: 3rem; */
-  /* position: relative; */
-  overflow: hidden;
-}
-
 .hero-img {
   position: absolute;
   display: block;
   width: 110%;
   left: -20px;
   overflow: hidden;
-  /* margin-bottom: 3rem; */
 }
 .hero-info {
   width: 85%;
@@ -141,14 +126,18 @@ header img {
   border: 1px solid rgb(135, 135, 157, 0.25);
   border-radius: 50%;
 }
+.two {
+  margin-bottom: 0;
+}
+.two span {
+  background-color: #fff;
+  z-index: 55;
+}
 
 /* PICTURE GRID- */
 .pic-grid {
-  /* max-width: 1440px; */
-  /* margin: 0 auto; */
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  /* grid-template-rows: repeat(2, 1fr); */
   grid-gap: 1.5rem;
   margin-bottom: 4rem;
   padding: 0 1.5rem;
@@ -183,18 +172,9 @@ header img {
   font-weight: 500;
   line-height: 26px;
   color: var(--text);
-  /* margin-bottom: 2rem; */
 }
 
 /* FOOTER */
-.two {
-  margin-bottom: 0;
-}
-.two span {
-  background-color: #fff;
-  z-index: 55;
-}
-
 .footer-pic-container {
   background-image: url('./assets/mobile/image-footer.jpg');
   background-size: cover;
@@ -207,7 +187,6 @@ header img {
 
 .footer-flex-container {
   margin: 0 auto;
-  /* opacity: 0.8; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -222,12 +201,6 @@ header img {
   opacity: 1;
 }
 
-/* .bg-image {
-  background-image: url('./assets/desktop/image-footer.jpg'),
-    linear-gradient(rgba(77, 150, 169, 0.9), rgba(77, 150, 169, 0.9));
-  background-blend-mode: multiply;
-} */
-
 .footer-flex-container p {
   margin-bottom: 35px;
   color: #fff;
@@ -237,6 +210,7 @@ header img {
   color: #fff;
   font-weight: 400;
 }
+
 /* HIDE PICS ON MOBILE AND TABLET */
 .hero-left-desktop,
 .hero-right-desktop {
@@ -252,9 +226,7 @@ header img {
 
 /* TABLET */
 @media (min-width: 640px) {
-  /* .container {
-    width: 720px;
-  } */
+  /* HEADER AND HERO */
   header {
     margin-bottom: 54px;
   }
@@ -277,6 +249,7 @@ header img {
     width: 80%;
     margin-bottom: 1.5rem;
   }
+  /* PICTURE GRID */
   .pic-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -284,6 +257,7 @@ header img {
     padding: 0 2.5rem;
     margin-bottom: 3rem;
   }
+  /* APP INFO SECTION */
   .app-info-text {
     width: 75%;
     padding: 0;
@@ -294,6 +268,7 @@ header img {
     margin: 0 auto;
     margin-bottom: 2rem;
   }
+  /* FOOTER */
   .footer h2 {
     width: 50%;
   }
@@ -310,14 +285,11 @@ header img {
 
 /* DESKTOP */
 @media screen and (min-width: 920px) {
-  /* .container {
-    width: 960px;
-  } */
   .container {
     max-width: 1600px;
     margin: 0 auto;
   }
-
+  /* HEADER AND HERO */
   header {
     margin-top: 80px;
     margin-bottom: 6.75rem;
@@ -336,7 +308,6 @@ header img {
     width: 30%;
     min-width: 20%;
     max-width: 600px;
-    /* max-width: 500px; */
     z-index: -5;
   }
   .hero-img-container {
@@ -351,8 +322,6 @@ header img {
   }
   .hero-info {
     margin-top: 0;
-    /* max-width: 540px;
-    min-width: 340px; */
     width: 40%;
     padding: 0;
     margin-bottom: 6.875rem;
@@ -362,6 +331,7 @@ header img {
     font-size: 4rem;
     line-height: 4rem;
   }
+  /* PIC GRID */
   .pic-grid {
     padding: 0 10.3125rem;
     justify-content: center;
@@ -373,10 +343,9 @@ header img {
     height: 100%;
     object-fit: cover;
     border-radius: 8px;
-    /* max-width: 255px;
-    min-width: 200px; */
     justify-self: center;
   }
+  /* APP INFOR SECTION */
   .app-info-text {
     max-width: 540px;
   }
@@ -386,19 +355,13 @@ header img {
     text-align: center;
     margin: 0 auto;
     margin-bottom: 2rem;
-    /* margin: 0 auto;
-    margin-bottom: 2rem; */
   }
+  /* FOOTER  */
   .footer-pic-container {
     width: 100%;
     background-image: url('./assets/desktop/image-footer.jpg');
   }
   .footer-flex-container {
-    /* margin: 0 auto;
-    flex-direction: row;
-    justify-content: center;
-    gap: 10%;
-    padding: 116px 165px 104px 165px; */
     width: 70%;
     margin: 0 auto;
     flex-direction: row;
